@@ -1,0 +1,86 @@
+short function sum(short param first, short param second, short param third) {
+short var sumRes = first + second + third;
+return sumRes;
+}
+
+str function printHello() {
+consolePrint "Hello, test!";
+str var hi = "Hello"; 
+return hi;
+}
+
+short function differenceInLength(str param strokeOne, str param strokeTwo) {
+short var lenOne = lenght(strokeOne);
+short var lenTwo = lenght(strokeTwo);
+short var res = lenOne - lenTwo;
+
+#Пример вызова другой функции в функции
+str var hello = printHello();
+return res;
+}
+
+
+main{
+#Пример работы арифметических операций
+short var a = -5;
+a = ((a + 7) * 6 / 3 - 4) % 2;
+consolePrint a;
+
+short var q = 0;
+q = 5+5*5+(5*5+5)*5;
+
+short var numberPrimary = 21;
+consolePrint numberPrimary;
+
+#Пример работы функции вычисления длины строки
+str var strB = "Текст строки, тест"; 
+short var b;
+b = 1 + lenght(strB);
+consolePrint b;
+
+#Пример функции копирования строки
+str var strBCopy = copy(strBCopy, strB, 5);
+consolePrint strBCopy;
+
+#Пример функции получения случайного числа
+short var rand = random(0, 100);
+consolePrint rand;
+
+#Пример функции получения локальной даты
+str var date = getLocalTimeAndDate();
+consolePrint date;
+
+#Пример работы цикла
+short var i = 0;
+repeat(i < 15) {
+consolePrint i;
+i = i + 1;
+}
+
+
+str var h = printHello();
+
+#Пример вызова функции и передачи целочисленных параметров
+a = 5;
+b = 10;
+
+short var c = 0;
+short var sumABC = sum(a, b, c);
+consolePrint sumABC; 	
+
+#Пример вызова функции и передачи строковых параметров
+str var firstStroke = "Hello";
+str var secondStroke = "How are you";
+short var difBetween = differenceInLength(firstStroke, secondStroke);
+consolePrint difBetween;
+
+#Пример шестнадцатиричного представление числа
+short var hexNum = hA;
+consolePrint "Шестнадцатиричное число A в 10й сс:";
+consolePrint hexNum;
+
+#Пример двоичного представления числа
+short var binNum = b1000;
+consolePrint "Двоичное число 1000 в 10й с/с:";
+consolePrint binNum;
+}
