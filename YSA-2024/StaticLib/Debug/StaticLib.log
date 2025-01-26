@@ -1,0 +1,4 @@
+﻿  StaticLib.cpp
+C:\Users\yarok\Desktop\Стасян\Курсовой_КПО\YSA-2024\StaticLib\StaticLib.cpp(31,13): warning C4267: инициализация: преобразование из "size_t" в "short"; возможна потеря данных
+C:\Users\yarok\Desktop\Стасян\Курсовой_КПО\YSA-2024\StaticLib\StaticLib.cpp(52,13): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  StaticLib.vcxproj -> C:\Users\yarok\Desktop\Стасян\Курсовой_КПО\YSA-2024\YSA-2024\Debug\StaticLib.lib
